@@ -56,6 +56,7 @@ const seedDB = async () => {
         const random1000 = Math.floor(Math.random() * 1000);
         const price = Math.floor(Math.random() * 20) + 10; // 가격을 10에서 30 사이로 설정
         const c = new Campground({
+            author: '697dcd664e022b148ae2a46e',
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             title: `${sample(descriptors)} ${sample(places)}`,
             image: photos[i].urls.regular,
